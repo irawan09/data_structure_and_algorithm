@@ -1,10 +1,18 @@
 fun main(args: Array<String>) {
 
-    var box = Any()
+    val box = Generics()
     box.put(13456)
     println(box.retrive())
     box.put("Hello")
     println(box.retrive())
+
+    val intBox = GenericsAbstract<Int>()
+    intBox.put(12344)
+    println(intBox.retrieve())
+
+    val stringBox = GenericsAbstract<String>()
+    stringBox.put("Hello")
+    println(stringBox.retrieve())
 
     val dynamicArrayList = DynamicArrayList<String>(100)
     println("Size of newly created vector is : ${dynamicArrayList.size()}")

@@ -1,4 +1,4 @@
-class Generic<T> {
+class GenericsAbstract<T> {
     var content: T? = null
 
     fun put(content:T?){

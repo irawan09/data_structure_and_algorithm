@@ -1,6 +1,6 @@
 import kotlin.Any
 
-class Any {
+class Generics {
     var content: Any? = null
 
     fun put(content: Any?){
