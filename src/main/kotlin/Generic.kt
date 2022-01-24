@@ -1,4 +1,4 @@
-class BoxT<T> {
+class Generic<T> {
     var content: T? = null
 
     fun put(content:T?){

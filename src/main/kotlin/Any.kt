@@ -1,4 +1,6 @@
-class Box {
+import kotlin.Any
+
+class Any {
     var content: Any? = null
 
     fun put(content: Any?){
