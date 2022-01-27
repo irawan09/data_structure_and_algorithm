@@ -1,4 +1,4 @@
-import LinkedList.Node
+import LinkedList.LinkedList
 
 fun main(args: Array<String>) {
 
@@ -38,17 +38,31 @@ fun main(args: Array<String>) {
 //    month.add("May")
 //    print(month)
 
-    val node1 = Node(1)
-    val node2 = Node(2)
-    val node3 = Node(4)
-    val node4 = Node(6)
-    val node5 = Node(0)
+//    val node1 = Node(1)
+//    val node2 = Node(2)
+//    val node3 = Node(4)
+//    val node4 = Node(6)
+//    val node5 = Node(0)
+//
+//    node1.next = node2
+//    node2.next = node3
+//    node3.next = node4
+//    node4.next = node5
+//
+//    println(node1)
 
-    node1.next = node2
-    node2.next = node3
-    node3.next = node4
-    node4.next = node5
+    val list = LinkedList<String>()
+    list.pushHead("Ary")
+    list.pushHead("Irawan")
+    list.pushHead("Chaos")
+    list.pushHead("Freedom")
+    list.pushHead("Increment")
+    println(list)
 
-    println(node1)
+    list.pushHead("Hello").pushHead("MyName").pushHead("is").pushHead("Ary")
+    println(list)
 
+    list.appendTail("Apple")
+    list.appendTail("Orange")
+    println(list)
 }
