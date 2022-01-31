@@ -2,6 +2,7 @@ import LinkedList.LinkedList
 
 fun main(args: Array<String>) {
 
+
 //    val box = Generics()
 //    box.put(13456)
 //    println(box.retrive())
@@ -32,7 +33,7 @@ fun main(args: Array<String>) {
 //
 //    val days = listOf("Sunday","Monday", "Tuesday", "Wednesday")
 //    val month = arrayListOf("January", "February","March", "April")
-//
+//+
 //    val modifiedDays = days + "Thursday"
 //    println(modifiedDays)
 //    month.add("May")
@@ -66,9 +67,14 @@ fun main(args: Array<String>) {
     list.appendTail("Orange")
     println(list)
 
-    list.insertAfter("Pineapple", list.nodeAt(3)!!)
+    list.insertAfter("Pineapple", list.nodeAt(1)!!)
     println(list)
 
-    list.popHead()
+    var head = list.popHead()
     println(list)
+    println("Head value $head")
+
+    var tail = list.removeTail()
+    println(list)
+    println(tail)
 }
