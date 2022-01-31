@@ -65,4 +65,10 @@ fun main(args: Array<String>) {
     list.appendTail("Apple")
     list.appendTail("Orange")
     println(list)
+
+    list.insertAfter("Pineapple", list.nodeAt(3)!!)
+    println(list)
+
+    list.popHead()
+    println(list)
 }
